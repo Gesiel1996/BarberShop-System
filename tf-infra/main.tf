@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "prod-github-actions-1241564546514" {
+resource "aws_s3_bucket" "prod-github-actions-12415645465143" {
   bucket = var.bucket_name
 }
 resource "aws_instance" "web_server" {
