@@ -52,7 +52,7 @@ jobs:
               DESTROY="$(jq -r '.${{ inputs.environment }}' ./tf-infra/destroy_config.json)"
               echo "destroy=$(echo $DESTROY)" >> $GITHUB_OUTPUT    
 
-          - name: Terraform Init
+          - name: Terraform Init 
             run:  | 
               cd tf-infra && terraform init \
               -backend-config="bucket=${{ inputs.aws-state-file }}" \
